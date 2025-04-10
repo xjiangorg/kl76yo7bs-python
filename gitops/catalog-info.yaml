@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: kl76yo7bs-python-gitops
+  description: This is GitOps manifest for kl76yo7bs-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=kl76yo7bs-python
+    backstage.io/kubernetes-id: kl76yo7bs-python 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: kl76yo7bs-python-gitops
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:kl76yo7bs-python

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: kl76yo7bs-python-repository
+spec:
+  url: https://github.com/xjiangorg/kl76yo7bs-python
